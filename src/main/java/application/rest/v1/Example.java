@@ -9,16 +9,12 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 import java.util.ArrayList;
 
-
 @Path("hello")
 public class Example {
-
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String greet() throws java.net.UnknownHostException{
         return "Hello from " + java.net.InetAddress.getLocalHost().getHostName(); 
     }
-
-
 }
